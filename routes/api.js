@@ -8,7 +8,8 @@ router.get("/", async function () {
   console.log("Hello Here");
 });
 
-//v1
+//TODO 
+// version control - v1
 router.get("/location", locationController.getLocation);
 router.get("/geolocation", locationController.getGeoLocation);
 router.get("/weather/:cityId", weatherController.getWeather);

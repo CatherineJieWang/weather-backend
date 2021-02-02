@@ -35,7 +35,6 @@ async function getGeoLocation(req, res) {
       res.status(200).send(response.data);
     }
   } catch (e) {
-    console.log('error', e.response)
     return res.status(e.response.status).send({ "Error Message": e });
   }
 }
